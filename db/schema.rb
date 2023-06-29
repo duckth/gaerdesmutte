@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_29_141923) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_29_213039) do
   create_table "facts", force: :cascade do |t|
     t.string "fact"
     t.integer "species_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.json "fact_i18n", default: {}
     t.index ["species_id"], name: "index_facts_on_species_id"
   end
 
@@ -24,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_29_141923) do
     t.string "common_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.json "common_name_i18n", default: {}
   end
 
   add_foreign_key "facts", "species"
