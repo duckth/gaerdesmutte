@@ -21,6 +21,26 @@ Species.create(
   ]
 )
 
+Photo.create(
+  [
+    {
+      species_id: 1,
+      photographer: 'Phil Mitchell',
+      source: 'Pexels'
+    },
+    {
+      species_id: 2,
+      photographer: 'Erik Karits',
+      source: 'Pexels'
+    },
+    {
+      species_id: 1,
+      photographer: 'Siegfried Poepperl',
+      source: 'Pexels'
+    }
+  ]
+)
+
 Fact.create(
   [
     {

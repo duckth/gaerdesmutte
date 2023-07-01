@@ -5,5 +5,6 @@ class FactsController < ApplicationController
 
   def random
     @fact = Fact.all.sample
+    @photo = @fact.photos.sample
   end
 end
