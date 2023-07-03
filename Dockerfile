@@ -1,5 +1,7 @@
 FROM ruby:3.2.0 AS gaerdesmutte
 
+ARG RAILS_ENV=production
+
 RUN mkdir -p /app
 WORKDIR /app
 
