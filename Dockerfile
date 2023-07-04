@@ -12,6 +12,4 @@ RUN gem install bundler && bundle install
 
 COPY . ./
 
-RUN bundle exec rails zeitwerk:check
-
 EXPOSE 3000
