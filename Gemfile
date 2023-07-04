@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'mobility', '~> 1.3.0.rc1'
 
+gem 'aws-sdk-s3', require: false
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
