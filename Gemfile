@@ -36,6 +36,9 @@ gem 'mobility', '~> 1.3.0.rc1'
 
 gem 'aws-sdk-s3', require: false
 
+gem 'omniauth-auth0', '~> 3.0'
+gem 'omniauth-rails_csrf_protection', '~> 1.0' # prevents forged authentication requests
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
