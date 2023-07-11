@@ -1,17 +1,18 @@
-<!-- auth bar -->
-<div>
-  <% if session[:userinfo].present? %>
-    <span><%= @user["name"] %></span>
-    <%= link_to 'Logout', '/auth/logout', method: :get %>
-  <% else %>
-    <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
-  <% end %>
-</div>
-<div>
-  <h1>Facts</h1>
-  <ul>
-    <% @facts.each do |fact| %>
-      <li><%= fact.fact %></li>
-    <% end %>
-  </ul>
+<div class="flex flex-col h-screen">
+  <div class="bg-blue-800 text-white py-4 w-full shrink-0">
+    <h1 class="text-center text-2xl">Header</h1>
+  </div>
+  <div class="flex flex-1">
+    <div class="w-1/6 bg-gray-200">
+      <ul class="list-none">
+        <li>Left</li>
+        <li>Side</li>
+        <li>Content</li>
+      </ul>
+    </div>
+    <div class="w-5/6 bg-gray-100 p-4">
+      <h2>Content Area</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod?</p>
+    </div>
+  </div>
 </div>
