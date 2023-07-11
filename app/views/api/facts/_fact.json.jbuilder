@@ -1,7 +1,6 @@
 json.id fact.id
 json.fact fact.fact
 
-
 if with_species_info
   json.species do
     json.scientific_name fact.species.scientific_name
