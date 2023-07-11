@@ -1,0 +1,17 @@
+<!-- auth bar -->
+<div>
+  <% if session[:userinfo].present? %>
+    <span><%= @user["name"] %></span>
+    <%= link_to 'Logout', '/auth/logout', method: :get %>
+  <% else %>
+    <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+  <% end %>
+</div>
+<div>
+  <h1>Facts</h1>
+  <ul>
+    <% @facts.each do |fact| %>
+      <li><%= fact.fact %></li>
+    <% end %>
+  </ul>
+</div>
