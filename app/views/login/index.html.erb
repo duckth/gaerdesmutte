@@ -1,1 +1,4 @@
-<%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+<div class="w-full h-screen flex flex-col justify-center items-center">
+  <%= image_tag "gaerdesmutte.jpg", class: "w-24 h-24 mb-5" %>
+  <%= button_to "Login", "/auth/auth0", method: :post, data: { turbo: false }, class: "btn btn-green" %>
+</div>

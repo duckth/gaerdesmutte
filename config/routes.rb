@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # root "facts#index"
   resources :facts
-
+  
   root "login#index"
 
   get "/auth/auth0/callback" => "auth0#callback"
