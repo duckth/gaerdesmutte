@@ -48,6 +48,8 @@ group :development, :test do
 
   gem "solargraph"
   gem "standard"
+
+  gem "faker"
 end
 
 group :development do
@@ -59,3 +61,7 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "simple_form", "~> 5.2"
+
+gem "ruby-vips", "~> 2.1"
+
+gem "image_processing", "~> 1.12"

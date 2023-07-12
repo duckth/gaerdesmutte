@@ -1,5 +1,5 @@
 class Admin::InterfaceController < SecuredController
   def index
-    @facts = Fact.all
+    @species = Species.all
   end
 end

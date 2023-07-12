@@ -1,10 +1,10 @@
 module Secured
   extend ActiveSupport::Concern
-  
+
   User = Data.define(
     :name,
     :email,
-    :picture,
+    :picture
   )
 
   included do
@@ -20,7 +20,7 @@ module Secured
     @current_user = User.new(
       session[:userinfo]["nickname"],
       session[:userinfo]["name"],
-      session[:userinfo]["picture"],
+      session[:userinfo]["picture"]
     )
   end
 end

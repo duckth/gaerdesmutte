@@ -1,0 +1,10 @@
+<%= turbo_frame_tag "species_show_area", class: "w-5/6 bg-gray-100 p-4" do %>
+  <div class="grid grid-cols-1 md:grid-cols-4 h-4/6 w-full">
+    <%= render @species.facts %>
+  </div>
+  <% if @species.photos.any? %>
+    <div class="h-2/6 w-full">
+      <%= render partial: "carousel", locals: { photos: @species.photos } %>
+    </div>
+  <% end %>
+<% end %>
