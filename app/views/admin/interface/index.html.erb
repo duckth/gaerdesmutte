@@ -17,18 +17,12 @@
   <div class="flex flex-col h-full">
     <div class="flex flex-1">
       <div class="w-1/6 bg-gray-200">
-        <ul class="list-none">
-          <% @facts.each do |fact| %>
-            <li class="p-2">
-              <%= render partial: "fact_card", locals: { fact: fact } %>
-            </li>
-          <% end %>
-        </ul>
+        <%= render @facts %>
       </div>
-      <div class="w-5/6 bg-gray-100 p-4">
-        <h2>Content Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod?</p>
-      </div>
+      <%= turbo_frame_tag "manage_area", class: "w-5/6 bg-gray-100 p-4 flex flex-col justify-center items-center" do %>
+        <span>Create fact</span>
+        <%= link_to "+", new_fact_path, class: "btn btn-green mt-2" %>
+      <% end %>
     </div>
   </div>
 </div>

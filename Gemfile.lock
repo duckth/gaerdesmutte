@@ -243,6 +243,9 @@ GEM
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
+    simple_form (5.2.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
@@ -321,6 +324,7 @@ DEPENDENCIES
   omniauth-rails_csrf_protection (~> 1.0)
   puma (~> 5.0)
   rails (~> 7.0.5, >= 7.0.5.1)
+  simple_form (~> 5.2)
   solargraph
   sprockets-rails
   sqlite3 (~> 1.4)
