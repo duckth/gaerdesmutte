@@ -7,9 +7,9 @@ COPY Gemfile ./
 COPY Gemfile.lock ./
 
 RUN gem install bundler && bundle install
-RUN bundle exec bootsnap precompile --gemfile app/ lib/ && bundle exec rails zeitwerk:check
-RUN bin/rails assets:precompile
 
 COPY . ./
+
+RUN bundle exec rake assets:precompile
 
 EXPOSE 3000
