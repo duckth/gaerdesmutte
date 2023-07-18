@@ -16,14 +16,12 @@
     </div>
   </header>
 
-  <div class="flex flex-col h-full">
-    <div class="flex flex-1">
-      <div class="w-1/6 bg-gray-200">
-        <%= render @species %>
-      </div>
-      <%= turbo_frame_tag "species_show_area", class: "w-5/6 bg-gray-500 p-4 flex flex-col justify-center items-center" do %>
-        <span>Stuff goes here...</span>
-      <% end %>
+  <div class="flex flex-1">
+    <div class="w-1/6 bg-gray-50">
+      <%= render @species %>
     </div>
+    <%= turbo_frame_tag "species_show_area", class: "w-5/6 bg-gray-200 p-4 flex flex-col justify-center items-center" do %>
+      <span>Stuff goes here...</span>
+    <% end %>
   </div>
 </div>
