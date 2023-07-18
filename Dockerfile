@@ -1,5 +1,7 @@
 FROM ruby:3.2.0 AS gaerdesmutte
 
+RUN apt update && apt install libvips42
+
 RUN mkdir -p /app
 WORKDIR /app
 
