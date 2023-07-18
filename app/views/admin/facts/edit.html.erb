@@ -1,0 +1,7 @@
+<div class="px-2 pt-2">
+  <%= turbo_frame_tag @fact do %>
+    <div class="block max-w-sm h-48 p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <%= render "form", fact: @fact %>
+    </div>
+  <% end %>
+</div>

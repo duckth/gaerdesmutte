@@ -1,0 +1,8 @@
+<div class="px-2 pt-2" >
+  <%= link_to species_url(species), data: { turbo_frame: "species_show_area" }, class: "block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" do %>
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= species.scientific_name %></h5>
+    <p class="font-normal text-gray-700 dark:text-gray-400"><%= species.common_name_en %></p>
+    <p class="font-normal text-gray-700 dark:text-gray-400"><%= species.common_name_da %></p>
+    <p class="font-normal text-gray-700 dark:text-gray-400">Facts: <%= species.facts.count %></p>
+  <% end %>
+</div>

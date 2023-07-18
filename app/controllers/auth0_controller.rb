@@ -7,7 +7,7 @@ class Auth0Controller < ApplicationController
     session[:userinfo] = auth_info["extra"]["raw_info"]
 
     # Redirect to the URL you want after successful auth
-    redirect_to "/facts"
+    redirect_to admin_interface_url
   end
 
   def failure
@@ -17,7 +17,7 @@ class Auth0Controller < ApplicationController
 
   def logout
     reset_session
-    redirect_to logout_url, allow_other_host: true
+    redirect_to root_url, allow_other_host: true
   end
 
   private

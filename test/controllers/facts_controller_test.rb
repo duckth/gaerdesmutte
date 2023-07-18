@@ -1,13 +1,13 @@
-require "test_helper"
+require 'test_helper'
 
 class FactsControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get "/facts.json"
+  test 'should get index' do
+    get facts_index_url
     assert_response :success
   end
 
-  test "should get random" do
-    get "/facts/random.json"
+  test 'should get show' do
+    get facts_show_url
     assert_response :success
   end
 end

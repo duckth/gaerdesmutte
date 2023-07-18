@@ -1,0 +1,2 @@
+<%= turbo_stream.after "new_fact", partial: "admin/facts/fact", locals: { fact: @fact } %>
+<%= turbo_stream.update "new_fact", partial: "admin/species/new_fact", locals: { species: @fact.species } %>

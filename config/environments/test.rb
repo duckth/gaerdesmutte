@@ -23,7 +23,7 @@ Rails.application.configure do
   }
 
   # Show full error reports and disable caching.
-  config.consider_all_requests_local = true
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
   config.cache_store = :null_store
 
@@ -32,6 +32,9 @@ Rails.application.configure do
 
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
+
+  # Store uploaded files on the local file system in a temporary directory.
+  config.active_storage.service = :test
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
