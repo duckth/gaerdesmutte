@@ -1,15 +1,7 @@
 <div class="px-2 pt-2">
   <%= turbo_frame_tag @fact do %>
     <div class="block max-w-sm h-48 p-4 bg-white border border-gray-200 rounded-lg shadow">
-      <%= form_with model: @fact, class: "h-full" do |form| %>
-        <div class="h-4/6">
-          <%= form.text_area :fact, class: "form-input leading-tight w-full h-full" %>
-        </div>
-        <div class="flex justify-end mt-4">
-          <%= link_to "✖️ Cancel", species_path(@fact.species), class: "font-bold rounded duration-150 bg-red-500 text-white hover:bg-red-700 py-2 pl-2 pr-4 mr-4" %>
-          <%= form.submit "💾 Save", class: "font-bold rounded duration-150 bg-green-500 text-white hover:bg-green-700 py-2 pl-2 pr-4" %>
-        </div>
-      <% end %>
+      <%= render "form", fact: @fact %>
     </div>
   <% end %>
 </div>

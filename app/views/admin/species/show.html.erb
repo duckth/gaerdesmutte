@@ -4,8 +4,13 @@
   </div>
   <div class="w-full h-full">
     <div class="grid grid-cols-1 md:grid-cols-4 h-4/6 w-full">
-      <%= render @species.facts %>
+      <%= turbo_frame_tag "new_fact", class: "px-2 pt-2" do %>
+        <%= render partial: "new_fact", locals: { species: @species } %>
+      <% end %>
+
+      <%= render @species.facts.ordered %>
     </div>
+
     <% if @species.photos.any? %>
       <div class="h-2/6 w-full">
         <%= render partial: "carousel", locals: { photos: @species.photos } %>

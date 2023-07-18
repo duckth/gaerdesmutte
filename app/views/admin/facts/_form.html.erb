@@ -1,0 +1,11 @@
+<%= form_with model: fact, class: "h-full" do |form| %>
+  <div class="h-4/6">
+    <%= form.text_area :fact, class: "form-input leading-tight w-full h-full" %>
+    <%= form.hidden_field :species_id, value: fact.species_id %>
+  </div>
+  <div class="flex justify-end mt-4">
+    <%= link_to "✖️ Cancel", species_path(fact.species), class: "font-bold rounded duration-150 bg-red-500 text-white hover:bg-red-700 py-2 pl-2 pr-4 mr-4" %>
+    <%= form.submit "💾 Save", class: "cursor-pointer font-bold rounded duration-150 bg-green-500 text-white hover:bg-green-700 py-2 pl-2 pr-4" %>
+  </div>
+<% end %>
+
