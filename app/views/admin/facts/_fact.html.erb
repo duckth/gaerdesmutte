@@ -1,5 +1,13 @@
 <div class="px-2 pt-2">
-  <a href="#" class="block max-w-sm h-36 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
-    <p class="line-clamp-3 font-normal text-gray-700"><%= fact.fact %></p>
-  </a>
+  <%= turbo_frame_tag fact do %>
+    <div class="block max-w-sm h-48 p-4 bg-white border border-gray-200 rounded-lg shadow">
+      <div class="h-4/6">
+        <p class="line-clamp-3 font-normal text-gray-700"><%= fact.fact %></p>
+      </div>
+      <div class="flex justify-end mt-4">
+        <%= link_to "🗡️ Delete", fact_path(fact), method: :delete, class: "font-bold rounded duration-150 bg-red-500 text-white hover:bg-red-700 py-2 pl-2 pr-4 mr-4", data: { turbo_method: :delete, turbo_confirm: "Confirm deletion of fact #{fact.id}" } %>
+        <%= link_to "📝 Edit", edit_fact_path(fact), class: "font-bold rounded duration-150 bg-green-500 text-white hover:bg-green-700 py-2 pl-2 pr-4" %>
+      </div>
+    </div>
+  <% end %>
 </div>

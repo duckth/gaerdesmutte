@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "/auth/logout" => "auth0#logout"
 
   get "/admin" => "admin/interface#index", :as => :admin_interface
-  resources :facts, controller: "admin/facts", only: [:new, :create]
+  resources :facts, controller: "admin/facts", only: [:new, :create, :show, :edit, :update, :destroy]
   resources :species, controller: "admin/species", only: [:new, :create, :show, :edit, :update, :destroy]
 
   namespace :api do
