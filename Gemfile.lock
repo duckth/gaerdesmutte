@@ -252,9 +252,6 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
-    simple_form (5.2.0)
-      actionpack (>= 5.2)
-      activemodel (>= 5.2)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
@@ -336,7 +333,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.5, >= 7.0.5.1)
   ruby-vips (~> 2.1)
-  simple_form (~> 5.2)
   solargraph
   sprockets-rails
   sqlite3 (~> 1.4)
