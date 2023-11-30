@@ -84,3 +84,6 @@ yarn-debug.log*
 
 /db/*.sqlite3*
 /dbprod/*.sqlite3*
+
+# Ignore rbs gem collection that can be installed
+.gem_rbs_collection
