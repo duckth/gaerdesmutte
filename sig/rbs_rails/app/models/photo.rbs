@@ -1,0 +1,269 @@
+class Photo < ::ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Photo, ActiveRecord_Relation, Integer]
+
+  module GeneratedAttributeMethods
+    def id: () -> Integer
+
+    def id=: (Integer) -> Integer
+
+    def id?: () -> bool
+
+    def id_changed?: () -> bool
+
+    def id_change: () -> [ Integer?, Integer? ]
+
+    def id_will_change!: () -> void
+
+    def id_was: () -> Integer?
+
+    def id_previously_changed?: () -> bool
+
+    def id_previous_change: () -> Array[Integer?]?
+
+    def id_previously_was: () -> Integer?
+
+    def id_before_last_save: () -> Integer?
+
+    def id_change_to_be_saved: () -> Array[Integer?]?
+
+    def id_in_database: () -> Integer?
+
+    def saved_change_to_id: () -> Array[Integer?]?
+
+    def saved_change_to_id?: () -> bool
+
+    def will_save_change_to_id?: () -> bool
+
+    def restore_id!: () -> void
+
+    def clear_id_change: () -> void
+
+    def photographer: () -> String?
+
+    def photographer=: (String?) -> String?
+
+    def photographer?: () -> bool
+
+    def photographer_changed?: () -> bool
+
+    def photographer_change: () -> [ String?, String? ]
+
+    def photographer_will_change!: () -> void
+
+    def photographer_was: () -> String?
+
+    def photographer_previously_changed?: () -> bool
+
+    def photographer_previous_change: () -> Array[String?]?
+
+    def photographer_previously_was: () -> String?
+
+    def photographer_before_last_save: () -> String?
+
+    def photographer_change_to_be_saved: () -> Array[String?]?
+
+    def photographer_in_database: () -> String?
+
+    def saved_change_to_photographer: () -> Array[String?]?
+
+    def saved_change_to_photographer?: () -> bool
+
+    def will_save_change_to_photographer?: () -> bool
+
+    def restore_photographer!: () -> void
+
+    def clear_photographer_change: () -> void
+
+    def source: () -> String?
+
+    def source=: (String?) -> String?
+
+    def source?: () -> bool
+
+    def source_changed?: () -> bool
+
+    def source_change: () -> [ String?, String? ]
+
+    def source_will_change!: () -> void
+
+    def source_was: () -> String?
+
+    def source_previously_changed?: () -> bool
+
+    def source_previous_change: () -> Array[String?]?
+
+    def source_previously_was: () -> String?
+
+    def source_before_last_save: () -> String?
+
+    def source_change_to_be_saved: () -> Array[String?]?
+
+    def source_in_database: () -> String?
+
+    def saved_change_to_source: () -> Array[String?]?
+
+    def saved_change_to_source?: () -> bool
+
+    def will_save_change_to_source?: () -> bool
+
+    def restore_source!: () -> void
+
+    def clear_source_change: () -> void
+
+    def species_id: () -> Integer
+
+    def species_id=: (Integer) -> Integer
+
+    def species_id?: () -> bool
+
+    def species_id_changed?: () -> bool
+
+    def species_id_change: () -> [ Integer?, Integer? ]
+
+    def species_id_will_change!: () -> void
+
+    def species_id_was: () -> Integer?
+
+    def species_id_previously_changed?: () -> bool
+
+    def species_id_previous_change: () -> Array[Integer?]?
+
+    def species_id_previously_was: () -> Integer?
+
+    def species_id_before_last_save: () -> Integer?
+
+    def species_id_change_to_be_saved: () -> Array[Integer?]?
+
+    def species_id_in_database: () -> Integer?
+
+    def saved_change_to_species_id: () -> Array[Integer?]?
+
+    def saved_change_to_species_id?: () -> bool
+
+    def will_save_change_to_species_id?: () -> bool
+
+    def restore_species_id!: () -> void
+
+    def clear_species_id_change: () -> void
+
+    def created_at: () -> ActiveSupport::TimeWithZone
+
+    def created_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def created_at?: () -> bool
+
+    def created_at_changed?: () -> bool
+
+    def created_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def created_at_will_change!: () -> void
+
+    def created_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_previously_changed?: () -> bool
+
+    def created_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_created_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_created_at?: () -> bool
+
+    def will_save_change_to_created_at?: () -> bool
+
+    def restore_created_at!: () -> void
+
+    def clear_created_at_change: () -> void
+
+    def updated_at: () -> ActiveSupport::TimeWithZone
+
+    def updated_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def updated_at?: () -> bool
+
+    def updated_at_changed?: () -> bool
+
+    def updated_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def updated_at_will_change!: () -> void
+
+    def updated_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_previously_changed?: () -> bool
+
+    def updated_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_updated_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_updated_at?: () -> bool
+
+    def will_save_change_to_updated_at?: () -> bool
+
+    def restore_updated_at!: () -> void
+
+    def clear_updated_at_change: () -> void
+  end
+  include GeneratedAttributeMethods
+
+  def blob_attachment: () -> ActiveStorage::Attachment?
+  def blob_attachment=: (ActiveStorage::Attachment?) -> ActiveStorage::Attachment?
+  def build_blob_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_blob_attachment: (untyped) -> ActiveStorage::Attachment
+  def create_blob_attachment!: (untyped) -> ActiveStorage::Attachment
+  def reload_blob_attachment: () -> ActiveStorage::Attachment?
+  def blob_blob: () -> ActiveStorage::Blob?
+  def blob_blob=: (ActiveStorage::Blob?) -> ActiveStorage::Blob?
+  def build_blob_blob: (untyped) -> ActiveStorage::Blob
+  def create_blob_blob: (untyped) -> ActiveStorage::Blob
+  def create_blob_blob!: (untyped) -> ActiveStorage::Blob
+  def reload_blob_blob: () -> ActiveStorage::Blob?
+  def species: () -> Species
+  def species=: (Species?) -> Species?
+  def reload_species: () -> Species?
+  def build_species: (untyped) -> Species
+  def create_species: (untyped) -> Species
+  def create_species!: (untyped) -> Species
+  module GeneratedAssociationMethods
+    def blob: () -> ActiveStorage::Attached::One
+
+    def blob=: (ActionDispatch::Http::UploadedFile) -> ActionDispatch::Http::UploadedFile
+             | (Rack::Test::UploadedFile) -> Rack::Test::UploadedFile
+             | (ActiveStorage::Blob) -> ActiveStorage::Blob
+             | (String) -> String
+             | ({ io: IO, filename: String, content_type: String? }) -> { io: IO, filename: String, content_type: String? }
+             | (nil) -> nil
+  end
+  include GeneratedAssociationMethods
+
+  def self.with_attached_blob: () -> ActiveRecord_Relation
+
+  module GeneratedRelationMethods
+    def with_attached_blob: () -> ActiveRecord_Relation
+  end
+
+  class ActiveRecord_Relation < ::ActiveRecord::Relation
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Photo, Integer]
+    include Enumerable[Photo]
+  end
+
+  class ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Photo, Integer]
+  end
+end

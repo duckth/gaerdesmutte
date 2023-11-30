@@ -1,0 +1,262 @@
+class Species < ::ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Species, ActiveRecord_Relation, Integer]
+
+  module GeneratedAttributeMethods
+    def id: () -> Integer
+
+    def id=: (Integer) -> Integer
+
+    def id?: () -> bool
+
+    def id_changed?: () -> bool
+
+    def id_change: () -> [ Integer?, Integer? ]
+
+    def id_will_change!: () -> void
+
+    def id_was: () -> Integer?
+
+    def id_previously_changed?: () -> bool
+
+    def id_previous_change: () -> Array[Integer?]?
+
+    def id_previously_was: () -> Integer?
+
+    def id_before_last_save: () -> Integer?
+
+    def id_change_to_be_saved: () -> Array[Integer?]?
+
+    def id_in_database: () -> Integer?
+
+    def saved_change_to_id: () -> Array[Integer?]?
+
+    def saved_change_to_id?: () -> bool
+
+    def will_save_change_to_id?: () -> bool
+
+    def restore_id!: () -> void
+
+    def clear_id_change: () -> void
+
+    def scientific_name: () -> String?
+
+    def scientific_name=: (String?) -> String?
+
+    def scientific_name?: () -> bool
+
+    def scientific_name_changed?: () -> bool
+
+    def scientific_name_change: () -> [ String?, String? ]
+
+    def scientific_name_will_change!: () -> void
+
+    def scientific_name_was: () -> String?
+
+    def scientific_name_previously_changed?: () -> bool
+
+    def scientific_name_previous_change: () -> Array[String?]?
+
+    def scientific_name_previously_was: () -> String?
+
+    def scientific_name_before_last_save: () -> String?
+
+    def scientific_name_change_to_be_saved: () -> Array[String?]?
+
+    def scientific_name_in_database: () -> String?
+
+    def saved_change_to_scientific_name: () -> Array[String?]?
+
+    def saved_change_to_scientific_name?: () -> bool
+
+    def will_save_change_to_scientific_name?: () -> bool
+
+    def restore_scientific_name!: () -> void
+
+    def clear_scientific_name_change: () -> void
+
+    def common_name: () -> String?
+
+    def common_name=: (String?) -> String?
+
+    def common_name?: () -> bool
+
+    def common_name_changed?: () -> bool
+
+    def common_name_change: () -> [ String?, String? ]
+
+    def common_name_will_change!: () -> void
+
+    def common_name_was: () -> String?
+
+    def common_name_previously_changed?: () -> bool
+
+    def common_name_previous_change: () -> Array[String?]?
+
+    def common_name_previously_was: () -> String?
+
+    def common_name_before_last_save: () -> String?
+
+    def common_name_change_to_be_saved: () -> Array[String?]?
+
+    def common_name_in_database: () -> String?
+
+    def saved_change_to_common_name: () -> Array[String?]?
+
+    def saved_change_to_common_name?: () -> bool
+
+    def will_save_change_to_common_name?: () -> bool
+
+    def restore_common_name!: () -> void
+
+    def clear_common_name_change: () -> void
+
+    def created_at: () -> ActiveSupport::TimeWithZone
+
+    def created_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def created_at?: () -> bool
+
+    def created_at_changed?: () -> bool
+
+    def created_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def created_at_will_change!: () -> void
+
+    def created_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_previously_changed?: () -> bool
+
+    def created_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def created_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def created_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_created_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_created_at?: () -> bool
+
+    def will_save_change_to_created_at?: () -> bool
+
+    def restore_created_at!: () -> void
+
+    def clear_created_at_change: () -> void
+
+    def updated_at: () -> ActiveSupport::TimeWithZone
+
+    def updated_at=: (ActiveSupport::TimeWithZone) -> ActiveSupport::TimeWithZone
+
+    def updated_at?: () -> bool
+
+    def updated_at_changed?: () -> bool
+
+    def updated_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+
+    def updated_at_will_change!: () -> void
+
+    def updated_at_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_previously_changed?: () -> bool
+
+    def updated_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_previously_was: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+
+    def updated_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def updated_at_in_database: () -> ActiveSupport::TimeWithZone?
+
+    def saved_change_to_updated_at: () -> Array[ActiveSupport::TimeWithZone?]?
+
+    def saved_change_to_updated_at?: () -> bool
+
+    def will_save_change_to_updated_at?: () -> bool
+
+    def restore_updated_at!: () -> void
+
+    def clear_updated_at_change: () -> void
+
+    def common_name_i18n: () -> untyped?
+
+    def common_name_i18n=: (untyped?) -> untyped?
+
+    def common_name_i18n?: () -> bool
+
+    def common_name_i18n_changed?: () -> bool
+
+    def common_name_i18n_change: () -> [ untyped?, untyped? ]
+
+    def common_name_i18n_will_change!: () -> void
+
+    def common_name_i18n_was: () -> untyped?
+
+    def common_name_i18n_previously_changed?: () -> bool
+
+    def common_name_i18n_previous_change: () -> Array[untyped?]?
+
+    def common_name_i18n_previously_was: () -> untyped?
+
+    def common_name_i18n_before_last_save: () -> untyped?
+
+    def common_name_i18n_change_to_be_saved: () -> Array[untyped?]?
+
+    def common_name_i18n_in_database: () -> untyped?
+
+    def saved_change_to_common_name_i18n: () -> Array[untyped?]?
+
+    def saved_change_to_common_name_i18n?: () -> bool
+
+    def will_save_change_to_common_name_i18n?: () -> bool
+
+    def restore_common_name_i18n!: () -> void
+
+    def clear_common_name_i18n_change: () -> void
+  end
+  include GeneratedAttributeMethods
+  def photos_attachments: () -> ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy
+  def photos_attachments=: (ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Attachment]) -> (ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Attachment])
+  def photos_attachment_ids: () -> Array[Integer]
+  def photos_attachment_ids=: (Array[Integer]) -> Array[Integer]
+  def photos_blobs: () -> ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy
+  def photos_blobs=: (ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Blob]) -> (ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy | Array[ActiveStorage::Blob])
+  def photos_blob_ids: () -> Array[Integer]
+  def photos_blob_ids=: (Array[Integer]) -> Array[Integer]
+  def photos: () -> Photo::ActiveRecord_Associations_CollectionProxy
+  def photos=: (Photo::ActiveRecord_Associations_CollectionProxy | Array[Photo]) -> (Photo::ActiveRecord_Associations_CollectionProxy | Array[Photo])
+  def photo_ids: () -> Array[Integer]
+  def photo_ids=: (Array[Integer]) -> Array[Integer]
+  def facts: () -> Fact::ActiveRecord_Associations_CollectionProxy
+  def facts=: (Fact::ActiveRecord_Associations_CollectionProxy | Array[Fact]) -> (Fact::ActiveRecord_Associations_CollectionProxy | Array[Fact])
+  def fact_ids: () -> Array[Integer]
+  def fact_ids=: (Array[Integer]) -> Array[Integer]
+
+  module GeneratedAssociationMethods
+    def photos: () -> ActiveStorage::Attached::Many
+
+    def photos=: (untyped) -> untyped
+  end
+  include GeneratedAssociationMethods
+
+  def self.with_attached_photos: () -> ActiveRecord_Relation
+
+  module GeneratedRelationMethods
+    def with_attached_photos: () -> ActiveRecord_Relation
+  end
+
+  class ActiveRecord_Relation < ::ActiveRecord::Relation
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Species, Integer]
+    include Enumerable[Species]
+  end
+
+  class ActiveRecord_Associations_CollectionProxy < ::ActiveRecord::Associations::CollectionProxy
+    include GeneratedRelationMethods
+    include _ActiveRecord_Relation[Species, Integer]
+  end
+end

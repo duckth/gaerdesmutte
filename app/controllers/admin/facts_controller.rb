@@ -9,7 +9,7 @@ class Admin::FactsController < SecuredController
 
     if @fact.save
       respond_to do |format|
-        format.html { redirect_to species_path(@fact.species), notice: 'Fact was successfully created.' }
+        format.html { redirect_to species_path(@fact.species), notice: "Fact was successfully created." }
         format.turbo_stream
       end
     else
@@ -25,7 +25,7 @@ class Admin::FactsController < SecuredController
     @fact = Fact.find(params[:id])
 
     if @fact.update(fact_params)
-      redirect_to species_path(@fact.species), notice: 'Fact was successfully updated.'
+      redirect_to species_path(@fact.species), notice: "Fact was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
@@ -36,7 +36,7 @@ class Admin::FactsController < SecuredController
     @fact.destroy
 
     respond_to do |format|
-      format.html { redirect_to species_path(@fact.species), notice: 'Fact was successfully destroyed.' }
+      format.html { redirect_to species_path(@fact.species), notice: "Fact was successfully destroyed." }
       format.turbo_stream
     end
   end

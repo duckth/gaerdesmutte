@@ -1,0 +1,22 @@
+module ActiveStorage
+end
+class ActiveStorage::Record < ActiveRecord::Base
+end
+class ActiveStorage::VariantRecord::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
+class ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
+class ApplicationRecord < ActiveRecord::Base
+end
+class ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
+class Photo::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
+class Fact::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+end
+class ActiveRecord::Associations::CollectionProxy < ActiveRecord::Relation
+end
+class ActiveRecord::Relation < Object
+end
+module ActiveRecord::Associations
+end
