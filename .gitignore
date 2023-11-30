@@ -82,5 +82,5 @@ yarn-debug.log*
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
-/db/*.sqlite3
-/dbprod/*.sqlite3
+/db/*.sqlite3*
+/dbprod/*.sqlite3*
